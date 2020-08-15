@@ -5,9 +5,9 @@ function bubbleSort(array) {
 	for(let i = 0; i < len; i++) {
 		let swapped = false;
 		let newBound = 0;
-		for(let j = 0; j < bound - 1; j++) {
+		for(let j = 0; j < bound; j++) {
 			count++;
-			if(array[j] > array[j] + 1) {
+			if(array[j] > array[j + 1]) {
 				let tmp = array[j + 1];
 				array[j + 1] = array[j];
 				array[j] = tmp;
@@ -25,4 +25,4 @@ function bubbleSort(array) {
 
 let array = [20, 45, 93, 67, 10, 97, 52, 88, 33, 92];
 let sortedArray = bubbleSort(array);
-console.log(sortedArray.sort());
+console.log(sortedArray);
